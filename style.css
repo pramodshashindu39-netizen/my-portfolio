@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:150px 1fr;
+    line-height: 2.0;
+    font-family: sans-serif;
+    background-image: url(assets/images/Background_img.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    margin: auto;
+    color: rgb(200, 146, 71);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttonsimg img{
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+.buttons button{
+    padding: 12px 24px;
+    width: 350px;
+    height: 100px;
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(54, 58, 69);
+    color: rgb(120, 177, 142);
+    cursor: pointer;
+}
